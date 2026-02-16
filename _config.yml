@@ -14,7 +14,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: political-science, immigration, education-policy, causal-inference
 lang: en
-icon: 🎓
+icon: favicon.svg
 
 url: https://rodrigosanchez.net
 baseurl: # leave blank for root
@@ -406,7 +406,7 @@ enable_tooltips: false
 enable_darkmode: true
 enable_navbar_social: false
 enable_project_categories: false
-enable_medium_zoom: false
+enable_medium_zoom: true
 enable_progressbar: false
 enable_video_embedding: false
 
