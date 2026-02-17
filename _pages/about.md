@@ -28,6 +28,6 @@ latest_posts:
 
 Welcome! I'm a PhD candidate at the Swiss Graduate School of Public Administration ([IDHEAP](https://www.unil.ch/idheap/en/home.html)), University of Lausanne.
 
-My research focuses on **immigration** and **integration**. I use causal inference methods — including **field experiments** — to study how migrants and refugees integrate into host societies. My work ranges from evaluating cash-based interventions for Venezuelan immigrants in Peru to designing and running a randomized controlled trial on how legal information provision affects integration outcomes of refugees in Greece. I'm also interested in **education policy**, particularly how tracking systems shape public opinion and inequality.
+My research focuses on **immigration** and **integration**. I use causal inference methods to study how migrants and refugees integrate into host societies. My work ranges from evaluating cash-based interventions for Venezuelan immigrants in Peru to designing and running a randomized controlled trial on how legal information provision affects integration outcomes of refugees in Greece. I'm also interested in **education policy**, particularly how tracking systems shape public opinion and inequality.
 
 Before my PhD, I spent two years as a Pre-Doctoral Fellow at the [Immigration Policy Lab](https://immigrationlab.org/) at ETH Zürich (2021–2023). I hold an MA in Economics from Central European University (2020) and a BA in Economics from Kansas State University (2018).
