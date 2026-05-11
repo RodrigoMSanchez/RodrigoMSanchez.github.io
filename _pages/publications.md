@@ -17,8 +17,26 @@ nav_order: 2
 
 ## Work in Progress
 
+### Revise & Resubmit
+
 <div class="publications">
 
-{% bibliography --query @unpublished %}
+{% bibliography --query @unpublished[status=rr] %}
+
+</div>
+
+### Under Review
+
+<div class="publications">
+
+{% bibliography --query @unpublished[status=review] %}
+
+</div>
+
+### Manuscript in Preparation
+
+<div class="publications">
+
+{% bibliography --query @unpublished[status=prep] %}
 
 </div>
