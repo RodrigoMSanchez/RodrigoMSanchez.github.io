@@ -9,7 +9,7 @@ images:
   slider: true
 ---
 
-Outside my academic work, my main hobby is cycling, and every so often the two collide.
+Outside my academic work, my main hobby is cycling, and now and then it overlaps with the day job.
 
 ### Cycling
 
@@ -54,7 +54,7 @@ That could be the wheels, but it could also just be that I was fitter and the we
 
 Comparing like season with like season, though, most of that gap goes away, so I wouldn't read too much into six weeks of data.
 
-I wrote it up as a tongue-in-cheek working paper, with real tables, a placebo, and a conflict-of-interest statement (I own the wheels):
+I wrote it up as a short working paper, with real tables, a placebo, and a conflict-of-interest statement (I own the wheels):
 
 <div class="mt-3">
 <a class="btn z-depth-0" role="button" href="{{ '/assets/pdf/wheels_carbon.pdf' | relative_url }}">📄 Working paper (PDF)</a>
