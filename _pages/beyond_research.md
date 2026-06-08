@@ -7,13 +7,17 @@ nav: true
 nav_order: 5
 ---
 
-Outside my academic work, I sometimes turn the same methods on much less serious questions. This is one of them.
+Outside my academic work, my main hobby is cycling, and every so often the two collide.
 
-### Do expensive carbon wheels make you faster?
+### Cycling
 
-Like a lot of cyclists, I wondered whether expensive carbon wheels are actually faster or mostly marketing. I record every ride, so I checked on my own data. On 21 April 2026 I replaced my road bike's aluminium wheels with deep-section carbon ones and left everything else unchanged.
+I ride road bikes, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads.
 
-Adjusting for power and terrain, the carbon setup is the fastest of my three bikes, about **+1.2 km/h** quicker than the same road bike on its old alloy wheels:
+#### The intersection between statistics and my hobby
+
+Recording every ride for years leaves me with a lot of data, and I can't quite resist pointing my day-job tools at it. The first thing I tested: whether the expensive carbon wheels I bought are actually faster, or mostly marketing.
+
+On 21 April 2026 I replaced my road bike's aluminium wheels with deep-section carbon ones and left everything else unchanged. Adjusting for power and terrain, the carbon setup is the fastest of my three bikes, about **+1.2 km/h** quicker than the same road bike on its old alloy wheels:
 
 {% include figure.liquid loading="eager" path="assets/img/wheels/speed_by_setup.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Adjusted average speed by setup, holding power and terrain at their means. The carbon road bike is the fastest of the three, about +1.2 km/h ahead of the same bike on alloy wheels. Bars are 95% confidence intervals." %}
 
