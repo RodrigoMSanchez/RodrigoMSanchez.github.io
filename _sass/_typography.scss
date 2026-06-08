@@ -19,6 +19,13 @@ strong {
   color: var(--global-text-color);
 }
 
+/* Justify body paragraphs site-wide (hyphenate so spacing stays even) */
+article p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }

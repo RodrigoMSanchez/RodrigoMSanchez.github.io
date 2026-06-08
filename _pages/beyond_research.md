@@ -20,7 +20,7 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
 .beyond-album swiper-slide { width: 315px; max-width: 86vw; }
 .beyond-album swiper-slide figure { margin: 0; }
 .beyond-album swiper-slide img { width: 100%; height: 420px; object-fit: cover; border-radius: 0.5rem; display: block; }
-.beyond-album figcaption.caption { font-size: 0.8rem; text-align: center; margin-top: 0.4rem; }
+.beyond-album figcaption.caption { font-size: 0.8rem; text-align: justify; margin-top: 0.4rem; }
 </style>
 
 <swiper-container class="beyond-album" slides-per-view="auto" centered-slides="true" space-between="14" navigation="true" pagination="true" pagination-clickable="true" grab-cursor="true" rewind="true">
