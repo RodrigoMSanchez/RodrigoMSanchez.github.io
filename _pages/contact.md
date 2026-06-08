@@ -4,7 +4,7 @@ permalink: /contact/
 title: Contact
 description:
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 I welcome inquiries about my research, potential collaborations, and academic opportunities. The best way to reach me is by email.
