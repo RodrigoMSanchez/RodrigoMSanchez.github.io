@@ -5,6 +5,8 @@ title: Beyond Research
 description: Quantitative questions I chase for fun, starting with whether my carbon wheels were worth it.
 nav: true
 nav_order: 5
+images:
+  slider: true
 ---
 
 Outside my academic work, my main hobby is cycling, and every so often the two collide.
@@ -13,20 +15,20 @@ Outside my academic work, my main hobby is cycling, and every so often the two c
 
 I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads. Off the bike, I also hike, nothing too extreme, and go for the occasional run.
 
-<div class="row">
-  <div class="col-sm-3 col-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="On the carbon bike near Schwarzenburg, the Préalpes behind." %}
-  </div>
-  <div class="col-sm-3 col-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux)." %}
-  </div>
-  <div class="col-sm-3 col-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Hiking in the Alps." %}
-  </div>
-  <div class="col-sm-3 col-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Above Schwarzsee, in the Fribourg Préalpes." %}
-  </div>
-</div>
+<style>
+.beyond-album { width: 100%; padding-bottom: 2.2rem; --swiper-theme-color: var(--global-theme-color); }
+.beyond-album swiper-slide { width: 315px; max-width: 86vw; }
+.beyond-album swiper-slide figure { margin: 0; }
+.beyond-album swiper-slide img { width: 100%; height: 420px; object-fit: cover; border-radius: 0.5rem; display: block; }
+.beyond-album figcaption.caption { font-size: 0.8rem; text-align: center; margin-top: 0.4rem; }
+</style>
+
+<swiper-container class="beyond-album" slides-per-view="auto" centered-slides="true" space-between="14" navigation="true" pagination="true" pagination-clickable="true" grab-cursor="true" rewind="true">
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="rounded z-depth-1" caption="On the carbon bike near Schwarzenburg, the Préalpes behind." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="rounded z-depth-1" caption="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux)." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="rounded z-depth-1" caption="Hiking in the Alps." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="rounded z-depth-1" caption="Above Schwarzsee, in the Fribourg Préalpes." %}</swiper-slide>
+</swiper-container>
 
 #### The intersection between statistics and my hobby
 
