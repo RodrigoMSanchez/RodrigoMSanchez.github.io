@@ -24,10 +24,10 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
 </style>
 
 <swiper-container class="beyond-album" slides-per-view="auto" centered-slides="true" space-between="14" navigation="true" pagination="true" pagination-clickable="true" grab-cursor="true" rewind="true">
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="rounded z-depth-1" caption="On the carbon bike near Schwarzenburg, the Préalpes behind." %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="rounded z-depth-1" caption="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux)." %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="rounded z-depth-1" caption="Hiking in the Alps." %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="rounded z-depth-1" caption="Above Schwarzsee, in the Fribourg Préalpes." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="rounded z-depth-1" zoomable=true caption="On the carbon bike near Schwarzenburg, the Préalpes behind. Spring 2026." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="rounded z-depth-1" zoomable=true caption="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux). Spring 2026." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="rounded z-depth-1" zoomable=true caption="Hiking in the Alps. Summer 2025." %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="rounded z-depth-1" zoomable=true caption="Above Schwarzsee, in the Fribourg Préalpes. Spring 2024." %}</swiper-slide>
 </swiper-container>
 
 #### The intersection between statistics and my hobby
