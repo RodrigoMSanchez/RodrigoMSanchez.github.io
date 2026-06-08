@@ -7,6 +7,7 @@ nav: true
 nav_order: 5
 images:
   slider: true
+  spotlight: true
 ---
 
 Outside my academic work, my main hobby is cycling, and now and then it overlaps with the day job.
@@ -18,17 +19,20 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
 <style>
 .beyond-album { width: 100%; padding-bottom: 2.2rem; --swiper-theme-color: var(--global-theme-color); }
 .beyond-album swiper-slide { width: 315px; max-width: 86vw; }
+.beyond-album swiper-slide a { display: block; cursor: zoom-in; }
 .beyond-album swiper-slide figure { margin: 0; }
 .beyond-album swiper-slide img { width: 100%; height: 420px; object-fit: cover; border-radius: 0.5rem; display: block; }
-.beyond-album figcaption.caption { font-size: 0.8rem; text-align: justify; margin-top: 0.4rem; }
+.beyond-album .caption { font-size: 0.8rem; text-align: justify; margin: 0.4rem 0 0; }
 </style>
 
+<div class="spotlight-group">
 <swiper-container class="beyond-album" slides-per-view="auto" centered-slides="true" space-between="14" navigation="true" pagination="true" pagination-clickable="true" grab-cursor="true" rewind="true">
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="rounded z-depth-1" zoomable=true caption="On the carbon bike near Schwarzenburg, the Préalpes behind. Spring 2026." %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="rounded z-depth-1" zoomable=true caption="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux). Spring 2026." %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="rounded z-depth-1" zoomable=true caption="Hiking in the Alps. Summer 2025." %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="rounded z-depth-1" zoomable=true caption="Above Schwarzsee, in the Fribourg Préalpes. Spring 2024." %}</swiper-slide>
+<swiper-slide><a class="spotlight" href="{{ '/assets/img/beyond/bike-prealps.jpg' | relative_url }}" data-title="On the carbon bike near Schwarzenburg, the Préalpes behind. Spring 2026.">{% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="rounded z-depth-1" %}</a><p class="caption">On the carbon bike near Schwarzenburg, the Préalpes behind. Spring 2026.</p></swiper-slide>
+<swiper-slide><a class="spotlight" href="{{ '/assets/img/beyond/bike-lacleman.jpg' | relative_url }}" data-title="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux). Spring 2026.">{% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="rounded z-depth-1" %}</a><p class="caption">Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux). Spring 2026.</p></swiper-slide>
+<swiper-slide><a class="spotlight" href="{{ '/assets/img/beyond/hike-ridge.jpg' | relative_url }}" data-title="Hiking in the Alps. Summer 2025.">{% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="rounded z-depth-1" %}</a><p class="caption">Hiking in the Alps. Summer 2025.</p></swiper-slide>
+<swiper-slide><a class="spotlight" href="{{ '/assets/img/beyond/trail-meadow.jpg' | relative_url }}" data-title="Above Schwarzsee, in the Fribourg Préalpes. Spring 2024.">{% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="rounded z-depth-1" %}</a><p class="caption">Above Schwarzsee, in the Fribourg Préalpes. Spring 2024.</p></swiper-slide>
 </swiper-container>
+</div>
 
 #### The intersection between statistics and my hobby
 
