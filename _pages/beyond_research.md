@@ -32,10 +32,10 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
 
 #### The intersection between statistics and my hobby
 
+<div class="row align-items-start mt-3">
+<div class="col-md-6" markdown="1">
 Recording every ride for years leaves me with a lot of data, so I analyzed it the way I would any other dataset. The first thing I tested: whether the expensive carbon wheels I bought are actually faster, or mostly marketing.
 
-<div class="row align-items-center mt-3">
-<div class="col-md-6" markdown="1">
 On 21 April 2026 I replaced my road bike's aluminium wheels with deep-section carbon ones and left everything else unchanged. Adjusting for power and terrain, the carbon setup is the fastest of my three bikes, about **+1.2 km/h** quicker than the same road bike on its old alloy wheels.
 </div>
 <div class="col-md-6">
@@ -43,7 +43,7 @@ On 21 April 2026 I replaced my road bike's aluminium wheels with deep-section ca
 </div>
 </div>
 
-<div class="row align-items-center mt-4">
+<div class="row align-items-start mt-4">
 <div class="col-md-6" markdown="1">
 That could be the wheels, but it could also just be that I was fitter and the weather was better. To separate the two, I use my gravel bike, ridden on the same roads in the same weeks and never upgraded, as a control: it should not speed up unless the season, rather than the wheels, is doing the work. In a difference-in-differences after the install, the road bike gains **+1.7 km/h** and the gravel bike does not.
 </div>
