@@ -11,11 +11,26 @@ Outside my academic work, my main hobby is cycling, and every so often the two c
 
 ### Cycling
 
-I ride road bikes, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads.
+I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads. Off the bike, I also hike, nothing too extreme, and go for the occasional run.
+
+<div class="row">
+  <div class="col-sm-3 col-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/beyond/bike-prealps.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="On the carbon bike near Schwarzenburg, the Préalpes behind." %}
+  </div>
+  <div class="col-sm-3 col-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/beyond/bike-lacleman.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Climbing above Lake Geneva, in the Lavaux vineyards (Puidoux)." %}
+  </div>
+  <div class="col-sm-3 col-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/beyond/hike-ridge.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Hiking in the Alps." %}
+  </div>
+  <div class="col-sm-3 col-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Above Schwarzsee, in the Fribourg Préalpes." %}
+  </div>
+</div>
 
 #### The intersection between statistics and my hobby
 
-Recording every ride for years leaves me with a lot of data, and I can't quite resist pointing my day-job tools at it. The first thing I tested: whether the expensive carbon wheels I bought are actually faster, or mostly marketing.
+Recording every ride for years leaves me with a lot of data, so I analyzed it the way I would any other dataset. The first thing I tested: whether the expensive carbon wheels I bought are actually faster, or mostly marketing.
 
 On 21 April 2026 I replaced my road bike's aluminium wheels with deep-section carbon ones and left everything else unchanged. Adjusting for power and terrain, the carbon setup is the fastest of my three bikes, about **+1.2 km/h** quicker than the same road bike on its old alloy wheels:
 
