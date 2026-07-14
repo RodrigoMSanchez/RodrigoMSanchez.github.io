@@ -76,3 +76,43 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+{% if page.permalink == '/' %}
+  <!-- Reveal the name in the navbar once the big headline scrolls up behind it -->
+  <style>
+    #navbar .navbar-brand.title.scroll-reveal-title {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease-in-out;
+    }
+    #navbar .navbar-brand.title.scroll-reveal-title.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+  <script>
+    (function () {
+      function init() {
+        var navTitle = document.querySelector('#navbar .navbar-brand.title.scroll-reveal-title');
+        var hero = document.querySelector('.post-header .post-title');
+        var nav = document.getElementById('navbar');
+        if (!navTitle || !hero) return;
+        var navH = nav ? nav.offsetHeight : 60;
+        if ('IntersectionObserver' in window) {
+          var obs = new IntersectionObserver(function (entries) {
+            navTitle.classList.toggle('is-visible', !entries[0].isIntersecting);
+          }, { rootMargin: '-' + navH + 'px 0px 0px 0px', threshold: 0 });
+          obs.observe(hero);
+        } else {
+          var onScroll = function () {
+            navTitle.classList.toggle('is-visible', hero.getBoundingClientRect().bottom < navH);
+          };
+          window.addEventListener('scroll', onScroll, { passive: true });
+          onScroll();
+        }
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
+{% endif %}
