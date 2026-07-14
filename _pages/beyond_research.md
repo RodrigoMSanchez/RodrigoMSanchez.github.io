@@ -69,21 +69,21 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
     <span class="hm-stats" id="heatmap-stats"></span>
   </div>
   <div id="activity-heatmap" data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"></div>
-  <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces. Areas around home are cropped out of the data before the map is built, so some tracks fade out at their edges.</p>
+  <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces.</p>
 </div>
 
 #### When the hobby meets the day job
 
 <div markdown="1">
-Recording every ride for years leaves me with a lot of data, so I tested the obvious question: are the expensive carbon wheels I bought actually faster, or mostly marketing? On 21 April 2026 I swapped my road bike's aluminium wheels for deep-section carbon ones and changed nothing else. Adjusting for power and terrain, the carbon setup is the fastest of my three bikes, about **+1.2 km/h** over the same bike on alloy; and in a difference-in-differences against my never-upgraded gravel bike, the road bike gains **+1.7 km/h** while the gravel bike does not. Compare like season with like season, though, and most of that gap goes away, so I wouldn't read too much into six weeks of data.
+Recording every ride for years leaves me with a lot of data, so I tested the obvious question: are the expensive carbon wheels I bought actually faster, or mostly marketing? On 21 April 2026 I swapped my road bike's aluminium wheels for deep-section carbon ones and changed nothing else. Adjusting for power and terrain, the carbon setup is the fastest of my three bikes, about **+1.3 km/h** over the same bike on alloy; and in a difference-in-differences against my never-upgraded gravel bike, the road bike gains **+2.2 km/h** while the gravel bike does not. Compare like season with like season, though, and most of that gap goes away, so I wouldn't read too much into a few months of data.
 </div>
 
 <div class="row align-items-start g-4 mt-1 wheels-figs">
 <div class="col-md-6">
-{% include figure.liquid loading="eager" path="assets/img/wheels/speed_by_setup.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Adjusted average speed by setup, holding power and terrain at their means. The carbon road bike is the fastest of the three, about +1.2 km/h ahead of the same bike on alloy wheels." %}
+{% include figure.liquid loading="eager" path="assets/img/wheels/speed_by_setup.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Adjusted average speed by setup, holding power and terrain at their means. The carbon road bike is the fastest of the three, about +1.3 km/h ahead of the same bike on alloy wheels." %}
 </div>
 <div class="col-md-6">
-{% include figure.liquid loading="eager" path="assets/img/wheels/main_results.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Road bike versus the gravel-bike placebo (difference-in-differences, at equal power and terrain). The road bike gains +1.7 km/h after the install while the never-upgraded gravel bike does not." %}
+{% include figure.liquid loading="eager" path="assets/img/wheels/main_results.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Road bike versus the gravel-bike placebo (difference-in-differences, at equal power and terrain). The road bike gains +2.2 km/h after the install while the never-upgraded gravel bike does not." %}
 </div>
 </div>
 
