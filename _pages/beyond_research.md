@@ -20,8 +20,8 @@ images:
 
 .beyond-lead { font-size: 1.05rem; margin: 0.2rem 0 1.1rem; }
 
-/* map hero */
-.hm-wrap { margin: 0 0 1.6rem; }
+/* activity map */
+.hm-wrap { margin: 0.5rem 0 1.6rem; }
 .hm-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.55rem; }
 .hm-kicker {
   display: inline-block; font-size: 0.72rem; letter-spacing: 0.14em;
@@ -51,15 +51,6 @@ images:
 
 <p class="beyond-lead">Outside my academic work, my main hobby is cycling, and now and then it overlaps with the day job.</p>
 
-<div class="hm-wrap">
-  <div class="hm-head">
-    <span class="hm-kicker">Where I ride</span>
-    <span class="hm-stats" id="heatmap-stats"></span>
-  </div>
-  <div id="activity-heatmap" data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"></div>
-  <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces. Areas around home are cropped out of the data before the map is built, so some tracks fade out at their edges.</p>
-</div>
-
 I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads. Off the bike, I also hike, nothing too extreme, and go for the occasional run. I log it all on [Strava](https://www.strava.com/athletes/51373334), if you want to follow along.
 
 <div class="spotlight-group">
@@ -70,6 +61,15 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
 <swiper-slide><a class="spotlight" href="{{ '/assets/img/beyond/trail-meadow.jpg' | relative_url }}" data-title="Above Schwarzsee, in the Fribourg Préalpes. Spring 2024.">{% include figure.liquid loading="eager" path="assets/img/beyond/trail-meadow.jpg" class="rounded z-depth-1" %}</a><p class="caption">Above Schwarzsee, in the Fribourg Préalpes. Spring 2024.</p></swiper-slide>
 <swiper-slide><a class="spotlight" href="{{ '/assets/img/beyond/run-winter.jpg' | relative_url }}" data-title="A run through fresh snow. Winter 2024.">{% include figure.liquid loading="eager" path="assets/img/beyond/run-winter.jpg" class="rounded z-depth-1" %}</a><p class="caption">A run through fresh snow. Winter 2024.</p></swiper-slide>
 </swiper-container>
+</div>
+
+<div class="hm-wrap">
+  <div class="hm-head">
+    <span class="hm-kicker">Where I ride</span>
+    <span class="hm-stats" id="heatmap-stats"></span>
+  </div>
+  <div id="activity-heatmap" data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"></div>
+  <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces. Areas around home are cropped out of the data before the map is built, so some tracks fade out at their edges.</p>
 </div>
 
 #### When the hobby meets the day job
