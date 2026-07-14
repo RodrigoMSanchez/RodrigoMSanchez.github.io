@@ -37,24 +37,6 @@ images:
 }
 .hm-note { font-size: 0.8rem; color: var(--global-text-color-light, #777); margin-top: 0.5rem; }
 
-/* at-a-glance facts card */
-.beyond-facts {
-  border: 1px solid var(--global-divider-color, #e0e0e0);
-  border-left: 3px solid #FC4C02; border-radius: 8px;
-  padding: 0.9rem 1.1rem;
-}
-.bf-row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.32rem 0; font-size: 0.9rem; border-bottom: 1px solid var(--global-divider-color, #eee); }
-.bf-row:last-of-type { border-bottom: 0; }
-.bf-k { color: var(--global-text-color-light, #888); }
-.bf-v { font-weight: 600; text-align: right; }
-.bf-strava {
-  display: block; text-align: center; margin-top: 0.7rem;
-  font-weight: 700; font-size: 0.85rem; letter-spacing: 0.02em;
-  color: #fff !important; background: #FC4C02;
-  border-radius: 999px; padding: 0.4rem 0.8rem; text-decoration: none;
-}
-.bf-strava:hover { background: #e8420a; }
-
 /* photo strip */
 .beyond-album { width: 100%; padding-bottom: 2.2rem; --swiper-theme-color: #FC4C02; }
 .beyond-album swiper-slide { width: 315px; max-width: 86vw; }
@@ -78,20 +60,7 @@ images:
   <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces. Areas around home are cropped out of the data before the map is built, so some tracks fade out at their edges.</p>
 </div>
 
-<div class="row align-items-center g-4 mb-2">
-<div class="col-md-7" markdown="1">
-I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads. Off the bike, I also hike, nothing too extreme, and go for the occasional run.
-</div>
-<div class="col-md-5">
-<aside class="beyond-facts">
-  <div class="bf-row"><span class="bf-k">On the bike</span><span class="bf-v">8&ndash;12 h / week</span></div>
-  <div class="bf-row"><span class="bf-k">Home roads</span><span class="bf-v">Fribourg, Switzerland</span></div>
-  <div class="bf-row"><span class="bf-k">Bikes</span><span class="bf-v">Road &middot; Gravel &middot; Indoor</span></div>
-  <div class="bf-row"><span class="bf-k">Off the bike</span><span class="bf-v">Hiking &middot; Running</span></div>
-  <a class="bf-strava" href="https://www.strava.com/athletes/51373334" target="_blank" rel="noopener">Follow along on Strava &rarr;</a>
-</aside>
-</div>
-</div>
+I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads. Off the bike, I also hike, nothing too extreme, and go for the occasional run. I log it all on [Strava](https://www.strava.com/athletes/51373334), if you want to follow along.
 
 <div class="spotlight-group">
 <swiper-container class="beyond-album" slides-per-view="auto" centered-slides="true" space-between="14" navigation="true" pagination="true" pagination-clickable="true" grab-cursor="true" rewind="true">
