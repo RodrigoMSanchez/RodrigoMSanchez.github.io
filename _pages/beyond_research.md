@@ -16,7 +16,42 @@ Outside my academic work, my main hobby is cycling, and now and then it overlaps
 
 I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 hours a week, though the honest average is closer to 8 or 9; a good week hits 12, but life tends to get in the way. Most of it is around Fribourg, where I live: into the hills and mountains when I want to climb, and out toward the Murtensee (Lake Murten) when I want flatter, faster roads. Off the bike, I also hike, nothing too extreme, and go for the occasional run. I log it all on [Strava](https://www.strava.com/athletes/51373334), if you want to follow along.
 
+<link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}" />
+
+<div class="hm-wrap">
+  <div class="hm-head">
+    <span class="hm-kicker">Where I ride</span>
+    <span class="hm-stats" id="heatmap-stats"></span>
+  </div>
+  <div id="activity-heatmap" data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"></div>
+  <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces. Areas around home are cropped out of the data before the map is built, so some tracks fade out at their edges.</p>
+</div>
+
+<script src="{{ '/assets/leaflet/leaflet.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/heatmap.js' | relative_url }}"></script>
+
 <style>
+/* --- Beyond Research: a sportier accent than the academic pages --- */
+.post article h3,
+.post article h4 { color: #E8420A; }
+.post article h3 { border-left: 4px solid #FC4C02; padding-left: 0.55rem; }
+
+.hm-wrap { margin: 1.5rem 0 2rem; }
+.hm-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.55rem; }
+.hm-kicker {
+  display: inline-block; font-size: 0.72rem; letter-spacing: 0.14em;
+  text-transform: uppercase; font-weight: 700; color: #FC4C02;
+  border: 1px solid #FC4C02; border-radius: 999px; padding: 0.14rem 0.7rem;
+}
+.hm-stats { font-size: 0.85rem; color: var(--global-text-color-light, #777); margin-left: auto; }
+#activity-heatmap {
+  width: 100%; height: 62vh; min-height: 400px;
+  background: #0e0e12; border-radius: 10px;
+  border-top: 3px solid #FC4C02;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.18);
+}
+.hm-note { font-size: 0.8rem; color: var(--global-text-color-light, #777); margin-top: 0.5rem; }
+
 .beyond-album { width: 100%; padding-bottom: 2.2rem; --swiper-theme-color: var(--global-theme-color); }
 .beyond-album swiper-slide { width: 315px; max-width: 86vw; }
 .beyond-album swiper-slide a { display: block; cursor: zoom-in; }

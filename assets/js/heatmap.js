@@ -22,13 +22,17 @@
   var el = document.getElementById("activity-heatmap");
   if (!el) return;
 
+  // Switzerland only: lock the view to the country.
+  var CH_BOUNDS = L.latLngBounds([45.75, 5.9], [47.85, 10.55]);
   var map = L.map(el, {
     preferCanvas: true,
-    center: [46.80, 7.16], // Fribourg
-    zoom: 10,
     scrollWheelZoom: true,
-    worldCopyJump: true,
+    maxBounds: CH_BOUNDS.pad(0.05),
+    maxBoundsViscosity: 1.0,
+    minZoom: 7,
+    maxZoom: 16,
   });
+  map.fitBounds(CH_BOUNDS);
 
   L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
     attribution:
@@ -55,6 +59,11 @@
           L.polyline(pts, CORE).addTo(map);
         });
       });
+
+      // the container often sizes after init (async CSS / layout); make sure
+      // the canvas is drawn at the right size and the view is framed on CH
+      map.invalidateSize();
+      map.fitBounds(CH_BOUNDS);
 
       // stat line
       var stat = document.getElementById("heatmap-stats");
