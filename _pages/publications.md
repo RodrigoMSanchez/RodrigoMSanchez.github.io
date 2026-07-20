@@ -19,6 +19,6 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography --query @unpublished --sort year,status --order desc,asc %}
+{% bibliography --query @unpublished --group_by none --sort status,year --order asc,desc %}
 
 </div>
