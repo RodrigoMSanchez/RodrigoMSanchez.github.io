@@ -158,7 +158,12 @@
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       {% endif %}
-      {% if entry.doi %}
+      {% comment %}
+        DOI and "Link to paper" resolve to the same page, so only fall back to the
+        DOI button when the entry has no html link. The doi field itself is kept in
+        papers.bib as metadata (altmetric, Dimensions, BibTeX export).
+      {% endcomment %}
+      {% if entry.doi and entry.html == nil %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.arxiv %}
