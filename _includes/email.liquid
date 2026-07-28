@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders an email address that address-harvesting bots cannot scrape.
+
+  The served HTML never contains the literal address: the payload is stored
+  reversed, with the "@" swapped for a "|", so no email-shaped string appears
+  in the page source. assets/js/email.js restores it on load and turns the
+  element into a normal mailto: link. Visitors without JavaScript still see a
+  readable "name [dot] surname [at] domain [dot] tld" fallback.
+
+  Usage: {% include email.liquid address="foo.bar@example.com" %}
+{%- endcomment -%}
+{%- assign payload = include.address | replace: "@", "|" | split: "" | reverse | join: "" -%}
+{%- assign fallback = include.address | replace: ".", " [dot] " | replace: "@", " [at] " -%}
+<span class="obfuscated-email" data-e="{{ payload }}">{{ fallback }}</span>

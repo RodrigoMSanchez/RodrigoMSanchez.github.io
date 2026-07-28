@@ -9,9 +9,9 @@ nav_order: 6
 
 I welcome inquiries about my research, potential collaborations, and academic opportunities. The best way to reach me is by email.
 
-**Email (professional):** &#114;&#111;&#100;&#114;&#105;&#103;&#111;&#46;&#115;&#97;&#110;&#99;&#104;&#101;&#122;&#64;&#117;&#110;&#105;&#108;&#46;&#99;&#104;
+**Email (professional):** {% include email.liquid address="rodrigo.sanchez@unil.ch" %}
 
-**Email (personal):** &#115;&#97;&#110;&#99;&#104;&#101;&#122;&#56;&#114;&#111;&#100;&#114;&#105;&#103;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+**Email (personal):** {% include email.liquid address="sanchez8rodrigo@gmail.com" %}
 
 **Affiliation:** [Swiss Graduate School of Public Administration (IDHEAP)](https://www.unil.ch/idheap/en/home.html), University of Lausanne
 

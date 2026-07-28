@@ -8,9 +8,11 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
+  # Liquid is not evaluated inside front matter, so the markup that
+  # _includes/email.liquid would generate is written out by hand here.
   more_info: >
-    <p>&#114;&#111;&#100;&#114;&#105;&#103;&#111;&#46;&#115;&#97;&#110;&#99;&#104;&#101;&#122;&#64;&#117;&#110;&#105;&#108;&#46;&#99;&#104; (professional)</p>
-    <p>&#115;&#97;&#110;&#99;&#104;&#101;&#122;&#56;&#114;&#111;&#100;&#114;&#105;&#103;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109; (personal)</p>
+    <p><span class="obfuscated-email" data-e="hc.linu|zehcnas.ogirdor">rodrigo [dot] sanchez [at] unil [dot] ch</span> (professional)</p>
+    <p><span class="obfuscated-email" data-e="moc.liamg|ogirdor8zehcnas">sanchez8rodrigo [at] gmail [dot] com</span> (personal)</p>
     <p>Fribourg, Switzerland</p>
 
 selected_papers: true
