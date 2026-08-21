@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".obfuscated-email").forEach(function(e){var t=e.getAttribute("data-e");if(t){var n=t.split("").reverse().join("").replace("|","@"),a=document.createElement("a");a.href="mailto:"+n,a.textContent=n,e.replaceWith(a)}})});
