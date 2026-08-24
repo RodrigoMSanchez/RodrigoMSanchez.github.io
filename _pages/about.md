@@ -29,7 +29,7 @@ latest_posts:
   limit: 3
 ---
 
-Welcome! I'm a PhD candidate at the Swiss Graduate School of Public Administration ([IDHEAP](https://www.unil.ch/idheap/en/home.html)), University of Lausanne, expected to graduate in Fall 2026.
+Welcome! I'm a PhD candidate at the Swiss Graduate School of Public Administration ([IDHEAP](https://www.unil.ch/idheap/en/home.html)), University of Lausanne.
 
 I use randomized controlled trials, survey experiments, and other **causal inference** methods to study **immigration** and integration, **inequality**, and **education policy**. I am interested in how policy interventions shape the integration of migrants and refugees, and in how the design of school systems shapes inequality and public attitudes toward it.
 
