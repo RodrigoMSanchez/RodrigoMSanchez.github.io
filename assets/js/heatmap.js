@@ -34,12 +34,23 @@
   });
   map.fitBounds(CH_BOUNDS);
 
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: "abcd",
-    maxZoom: 19,
-  }).addTo(map);
+  // Esri's Dark Gray Canvas, which needs no API key. CARTO's dark_all basemap
+  // was used until Aug 2026, when CARTO began stamping keyless tiles with an
+  // "API KEY REQUIRED" watermark. Labels ship as a separate reference layer
+  // and are added second so they sit above the shaded base.
+  var ESRI_CREDIT =
+    'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, HERE, Garmin, ' +
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+  L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    { attribution: ESRI_CREDIT, maxZoom: 16 }
+  ).addTo(map);
+
+  L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+    { attribution: "", maxZoom: 16 }
+  ).addTo(map);
 
   var GLOW = { color: "#FC4C02", weight: 4, opacity: 0.07, interactive: false };
   var CORE = { color: "#FF6A2B", weight: 1.4, opacity: 0.5, interactive: false };

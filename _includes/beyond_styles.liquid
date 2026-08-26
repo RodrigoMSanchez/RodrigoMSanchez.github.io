@@ -29,6 +29,10 @@
   box-shadow: 0 2px 14px rgba(0,0,0,0.18);
 }
 .hm-note { font-size: 0.8rem; color: var(--global-text-color-light, #777); margin-top: 0.5rem; }
+/* Esri's Dark Gray Canvas is a mid grey, lighter than the CARTO basemap this
+   replaced. Darken the tiles only: the tracks live in the overlay pane, so
+   they keep their full brightness against the near-black ground. */
+#activity-heatmap .leaflet-tile-pane { filter: brightness(0.45) contrast(1.05); }
 
 /* photo strip */
 .beyond-album { width: 100%; padding-bottom: 2.2rem; --swiper-theme-color: #FC4C02; }
