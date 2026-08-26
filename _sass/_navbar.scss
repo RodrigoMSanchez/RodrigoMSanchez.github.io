@@ -188,3 +188,58 @@
     color: var(--global-hover-color);
   }
 }
+
+/* Nav labels must never break mid-phrase ("Über / mich", "Neben der /
+   Forschung"). Six items plus the language switcher only fit on one row at
+   lg and above, which is why the navbar collapses into the toggle below that
+   (navbar-expand-lg in _includes/header.liquid); the German labels are the
+   long ones and set the required width. */
+.navbar-nav .nav-item .nav-link,
+.navbar-brand.title {
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item .nav-link {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  /* The name is the only flexible element on the row: if a longer label ever
+     needs the space, it gives way instead of pushing the nav out of the bar. */
+  .navbar-brand.title {
+    margin-right: 0;
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Language switcher (EN / DE) --------------------------------------------- */
+.navbar-nav .nav-item.lang-switch {
+  display: flex;
+  align-items: center;
+  /* keeps EN / DE on the right in the collapsed menu, where the item
+     stretches to the full width of the column */
+  justify-content: flex-end;
+  white-space: nowrap;
+
+  .nav-link.lang-option {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+  }
+
+  .lang-current {
+    font-weight: bold;
+    color: var(--global-theme-color);
+    cursor: default;
+  }
+
+  .lang-sep {
+    opacity: 0.45;
+    font-size: 0.85rem;
+  }
+}

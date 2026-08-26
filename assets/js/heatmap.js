@@ -65,14 +65,25 @@
       map.invalidateSize();
       map.fitBounds(CH_BOUNDS);
 
-      // stat line
+      // stat line; the wording comes from the page so it follows its language
       var stat = document.getElementById("heatmap-stats");
       if (stat) {
         stat.textContent =
-          data.activities.length + " activities · " + years[0] + "–" + years[1];
+          data.activities.length +
+          " " +
+          (el.dataset.labelActivities || "activities") +
+          " · " +
+          years[0] +
+          "–" +
+          years[1];
       }
     })
     .catch(function (err) {
-      el.innerHTML = '<p style="padding:1rem">Could not load track data (' + err + ").</p>";
+      el.innerHTML =
+        '<p style="padding:1rem">' +
+        (el.dataset.labelError || "Could not load track data") +
+        " (" +
+        err +
+        ").</p>";
     });
 })();

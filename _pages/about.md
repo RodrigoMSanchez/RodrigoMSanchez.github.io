@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /
+ref: about # pairs this page with its German and Spanish counterparts
 subtitle: PhD Candidate in Public Administration &bull; <a href='https://www.unil.ch/idheap/en/home.html'>University of Lausanne (IDHEAP)</a>
 
 profile:

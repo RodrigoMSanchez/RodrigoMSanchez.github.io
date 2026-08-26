@@ -1,24 +1,24 @@
 ---
 layout: page
-permalink: /contact/
-ref: contact # pairs this page with its German and Spanish counterparts
-title: Contact
+permalink: /es/contacto/
+ref: contact
+title: Contacto
 description:
 nav: true
 nav_order: 6
 ---
 
-I welcome inquiries about my research, potential collaborations, and academic opportunities. The best way to reach me is by email.
+Recibo con gusto consultas sobre mi investigación, posibles colaboraciones y oportunidades académicas. La mejor forma de contactarme es por correo electrónico.
 
-**Email (professional):** {% include email.liquid address="rodrigo.sanchez@unil.ch" %}
+**Correo (profesional):** {% include email.liquid address="rodrigo.sanchez@unil.ch" %}
 
-**Email (personal):** {% include email.liquid address="sanchez8rodrigo@gmail.com" %}
+**Correo (personal):** {% include email.liquid address="sanchez8rodrigo@gmail.com" %}
 
-**Affiliation:** [Swiss Graduate School of Public Administration (IDHEAP)](https://www.unil.ch/idheap/en/home.html), University of Lausanne
+**Afiliación:** [Swiss Graduate School of Public Administration (IDHEAP)](https://www.unil.ch/idheap/en/home.html), Universidad de Lausana
 
 ---
 
-#### Profiles
+#### Perfiles
 
 <a href="https://scholar.google.com/citations?user=WKpNickAAAAJ" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i> Google Scholar</a> &middot;
 <a href="https://orcid.org/0009-0009-4496-3734" target="_blank" rel="noopener noreferrer"><i class="ai ai-orcid"></i> ORCID</a> &middot;

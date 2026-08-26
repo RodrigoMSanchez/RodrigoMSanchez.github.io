@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /beyond/
+ref: beyond # pairs this page with its German and Spanish counterparts
 title: Beyond Research
 description: Cycling, the outdoors, and the occasional data question.
 nav: true
@@ -10,44 +11,7 @@ images:
   spotlight: true
 ---
 
-<link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}" />
-
-<style>
-/* --- Beyond Research: a sportier accent than the academic pages --- */
-.post article h3,
-.post article h4 { color: #E8420A; }
-.post article h4 { border-left: 4px solid #FC4C02; padding-left: 0.55rem; margin-top: 0; }
-
-.beyond-lead { font-size: 1.05rem; margin: 0.2rem 0 1.1rem; }
-
-/* activity map */
-.hm-wrap { margin: 0.5rem 0 1.6rem; }
-.hm-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.55rem; }
-.hm-kicker {
-  display: inline-block; font-size: 0.72rem; letter-spacing: 0.14em;
-  text-transform: uppercase; font-weight: 700; color: #FC4C02;
-  border: 1px solid #FC4C02; border-radius: 999px; padding: 0.14rem 0.7rem;
-}
-.hm-stats { font-size: 0.85rem; color: var(--global-text-color-light, #777); margin-left: auto; }
-#activity-heatmap {
-  width: 100%; height: 56vh; min-height: 380px;
-  background: #0e0e12; border-radius: 10px;
-  border-top: 3px solid #FC4C02;
-  box-shadow: 0 2px 14px rgba(0,0,0,0.18);
-}
-.hm-note { font-size: 0.8rem; color: var(--global-text-color-light, #777); margin-top: 0.5rem; }
-
-/* photo strip */
-.beyond-album { width: 100%; padding-bottom: 2.2rem; --swiper-theme-color: #FC4C02; }
-.beyond-album swiper-slide { width: 315px; max-width: 86vw; }
-.beyond-album swiper-slide a { display: block; cursor: zoom-in; }
-.beyond-album swiper-slide figure { margin: 0; }
-.beyond-album swiper-slide img { width: 100%; height: 380px; object-fit: cover; border-radius: 0.5rem; display: block; }
-.beyond-album .caption { font-size: 0.8rem; text-align: justify; margin: 0.4rem 0 0; }
-
-/* wheels study */
-.wheels-figs figcaption { font-size: 0.78rem; }
-</style>
+{% include beyond_styles.liquid %}
 
 <p class="beyond-lead">Outside my academic work, my main hobby is cycling, and now and then it overlaps with the day job.</p>
 
@@ -68,7 +32,13 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
     <span class="hm-kicker">Where I ride</span>
     <span class="hm-stats" id="heatmap-stats"></span>
   </div>
-  <div id="activity-heatmap" data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"></div>
+  {%- assign t = site.data.i18n[page.lang] -%}
+  <div
+    id="activity-heatmap"
+    data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"
+    data-label-activities="{{ t.activities }}"
+    data-label-error="{{ t.heatmap_error }}"
+  ></div>
   <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces.</p>
 </div>
 

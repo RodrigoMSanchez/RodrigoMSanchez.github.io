@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /cv/
+ref: cv # pairs this page with its German and Spanish counterparts
 title: CV
 nav: true
 nav_order: 4

@@ -1,0 +1,35 @@
+{%- comment -%}
+  EN / DE switcher for the navbar.
+
+  Pages are paired across languages by the `ref` key in their front matter
+  (about, research, policy_reports, cv, beyond, contact). When the current
+  page has no counterpart, the link falls back to that language's home page.
+{%- endcomment -%}
+{%- assign cur_lang = page.lang | default: site.lang -%}
+<li class="nav-item lang-switch">
+  {%- for code in site.languages -%}
+    {%- assign l = site.data.i18n[code] -%}
+    {%- assign target = l.home -%}
+    {%- if page.ref -%}
+      {%- for p in site.pages -%}
+        {%- if p.ref == page.ref and p.lang == code -%}
+          {%- assign target = p.url -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if code == cur_lang -%}
+      <span class="nav-link lang-option lang-current" aria-current="true">{{ code | upcase }}</span>
+    {%- else -%}
+      <a
+        class="nav-link lang-option"
+        href="{{ target | relative_url }}"
+        hreflang="{{ code }}"
+        lang="{{ code }}"
+        title="{{ l.switch_language }}"
+        >{{ code | upcase }}</a
+      >
+    {%- endif -%}
+    {%- unless forloop.last -%}<span class="lang-sep" aria-hidden="true">/</span>{%- endunless -%}
+  {%- endfor -%}
+</li>

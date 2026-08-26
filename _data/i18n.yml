@@ -1,0 +1,154 @@
+# -----------------------------------------------------------------------------
+# UI strings for the bilingual site (English / Swiss Standard German).
+# Look up with: {% assign t = site.data.i18n[page.lang] %}
+# Page bodies live in _pages/ (English) and _pages/de/ (German); only chrome,
+# labels and dates are translated here.
+# -----------------------------------------------------------------------------
+
+en:
+  code: en
+  name: English
+  locale: en_US
+  home: /
+  # about layout
+  # fallback <meta name="description"> for pages that set none of their own
+  site_description: >
+    Rodrigo Sánchez Sienra, PhD candidate in Public Administration at the University of Lausanne (IDHEAP).
+    Experiments and causal inference on immigration, integration, inequality, and education policy.
+  news_heading: News
+  news_empty: No news so far...
+  selected_papers_heading: Selected Publications
+  latest_posts_heading: latest posts
+  # footer
+  footer_text: >
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+    Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  last_updated: "Last updated"
+  # %m month name, %d day of month, %y year
+  date_long: "%m %d, %y"
+  copyright: Copyright
+  # navbar
+  switch_language: Switch language
+  toggle_navigation: Toggle navigation
+  change_theme: Change theme
+  current: "(current)"
+  # bibliography
+  bib:
+    with: with
+    and: and
+    in: In
+    abstract: Abstract
+    awarded: Awarded
+    link: Link to paper
+    references: References
+  # activity map on the "Beyond Research" page
+  activities: activities
+  heatmap_error: "Could not load track data"
+  # dates
+  months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+
+de:
+  code: de
+  name: Deutsch
+  locale: de_CH
+  home: /de/
+  site_description: >
+    Rodrigo Sánchez Sienra, Doktorand in Public Administration an der Universität Lausanne (IDHEAP).
+    Experimente und kausale Inferenz zu Migration, Integration, Ungleichheit und Bildungspolitik.
+  news_heading: Aktuelles
+  news_empty: Bisher keine Meldungen.
+  selected_papers_heading: Ausgewählte Publikationen
+  latest_posts_heading: neueste Beiträge
+  footer_text: >
+    Erstellt mit <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> und dem <a href="https://github.com/alshedivat/al-folio">al-folio</a>-Theme.
+    Gehostet von <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  last_updated: "Zuletzt aktualisiert"
+  date_long: "%d. %m %y"
+  copyright: Copyright
+  switch_language: Sprache wechseln
+  toggle_navigation: Navigation ein- und ausblenden
+  change_theme: Darstellung wechseln
+  current: "(aktuelle Seite)"
+  bib:
+    with: mit
+    and: und
+    in: In
+    abstract: Zusammenfassung
+    awarded: Ausgezeichnet
+    link: Zum Artikel
+    references: Literatur
+  activities: Aktivitäten
+  heatmap_error: "Streckendaten konnten nicht geladen werden"
+  months:
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Dezember
+
+es:
+  code: es
+  name: Español
+  locale: es_ES
+  home: /es/
+  site_description: >
+    Rodrigo Sánchez Sienra, doctorando en Administración Pública en la Universidad de Lausana (IDHEAP).
+    Experimentos e inferencia causal sobre migración, integración, desigualdad y política educativa.
+  news_heading: Novedades
+  news_empty: Todavía no hay novedades.
+  selected_papers_heading: Publicaciones seleccionadas
+  latest_posts_heading: entradas recientes
+  footer_text: >
+    Hecho con <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> y el tema <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+    Alojado en <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  last_updated: "Última actualización"
+  date_long: "%d de %m de %y"
+  copyright: Copyright
+  switch_language: Cambiar idioma
+  toggle_navigation: Mostrar u ocultar la navegación
+  change_theme: Cambiar el tema
+  current: "(página actual)"
+  bib:
+    with: con
+    and: "y"
+    in: En
+    abstract: Resumen
+    awarded: Premiado
+    link: Ver artículo
+    references: Referencias
+  activities: actividades
+  heatmap_error: "No se pudieron cargar los datos de las rutas"
+  # lowercase, as Spanish writes them inside a date ("26 de agosto de 2026");
+  # the news table capitalizes the first letter itself
+  months:
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre

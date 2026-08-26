@@ -1,8 +1,9 @@
 ---
 layout: page
-permalink: /policy-reports/
-ref: policy_reports # pairs this page with its German and Spanish counterparts
-title: Policy Reports
+permalink: /de/politikberichte/
+ref: policy_reports
+title: Politikberichte
+nav_title: Berichte # the navbar row only fits a short label here
 description:
 nav: true
 nav_order: 3
@@ -17,10 +18,10 @@ nav_order: 3
   <div id="unhcr2024" class="col-sm-10">
     <div class="title">Home for Good? Obstacles and Opportunities for Refugees and Asylum Seekers in Greece</div>
     <div class="author">
-      with Marine Casalis, Alexandra C. Hartman, and Dominik Hangartner
+      mit Marine Casalis, Alexandra C. Hartman und Dominik Hangartner
     </div>
     <div class="periodical">
-      Report for <em>UNHCR</em>, 2024
+      Bericht für <em>UNHCR</em>, 2024
     </div>
     <div class="links">
       <a href="https://immigrationlab.org/content/uploads/2024/01/IPL_HomeForGood_UNHCR_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
@@ -34,10 +35,10 @@ nav_order: 3
   <div id="iom2023" class="col-sm-10">
     <div class="title">Evaluating the Effects of Cash-Based Interventions on the Integration of Vulnerable Venezuelan Migrants in Peru: Key Findings Using a Multidimensional Approach to Measure Migrant Integration Outcomes</div>
     <div class="author">
-      with Monica Aguilar Folch, Ace Dela Cruz, Jobst Koehler, Morgane Reina, Karla Sulca, Achim Ahrens, Dominik Hangartner, and Marine Casalis
+      mit Monica Aguilar Folch, Ace Dela Cruz, Jobst Koehler, Morgane Reina, Karla Sulca, Achim Ahrens, Dominik Hangartner und Marine Casalis
     </div>
     <div class="periodical">
-      Report for <em>IOM</em>, 2023
+      Bericht für <em>IOM</em>, 2023
     </div>
     <div class="links">
       <a href="https://www.iom.int/sites/g/files/tmzbdl486/files/documents/2023-08/annex15a_impactevaluationperuenglish.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
@@ -49,3 +50,5 @@ nav_order: 3
 </ol>
 
 </div>
+
+<p class="text-muted mt-4" style="font-size: 0.85rem;">Die Berichtstitel stehen in der Originalsprache der Veröffentlichung, also auf Englisch.</p>

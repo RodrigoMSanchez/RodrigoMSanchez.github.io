@@ -14,7 +14,8 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: political-science, immigration, education-policy, causal-inference
-lang: en
+lang: en # default language of the site (the / tree); German lives under /de/
+languages: [en, de, es] # order of the navbar language switcher
 icon: favicon.svg
 
 url: https://rodrigosanchez.net
@@ -222,6 +223,20 @@ plugins:
 
 # Sitemap settings
 defaults:
+  # Every page and document is English unless it says otherwise; the German
+  # tree under _pages/de overrides it, as do the _news/de_*.md items.
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "_pages/de"
+    values:
+      lang: de
+  - scope:
+      path: "_pages/es"
+    values:
+      lang: es
   - scope:
       path: "assets"
     values:

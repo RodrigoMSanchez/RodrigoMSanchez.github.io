@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /research/
+ref: research # pairs this page with its German and Spanish counterparts
 title: Research
 description:
 nav: true
