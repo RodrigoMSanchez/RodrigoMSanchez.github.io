@@ -201,8 +201,8 @@
 
 @media (min-width: 992px) {
   .navbar-nav .nav-item .nav-link {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-left: 0.26rem;
+    padding-right: 0.26rem;
   }
 
   /* The name is the only flexible element on the row: if a longer label ever
@@ -220,22 +220,57 @@
 .navbar-nav .nav-item.lang-switch {
   display: flex;
   align-items: center;
-  /* keeps EN / DE on the right in the collapsed menu, where the item
+  /* keeps EN / DE / ES on the right in the collapsed menu, where the item
      stretches to the full width of the column */
   justify-content: flex-end;
   white-space: nowrap;
 
+  /* A rule between the pages and the languages, so the codes do not read as
+     one more nav item. Vertical on the desktop row; on the collapsed menu the
+     column runs downward, so it becomes a line above the group instead. */
+  &::before {
+    content: "";
+    width: 1px;
+    height: 1.15em;
+    margin: 0 0.5rem 0 0.45rem;
+    background: var(--global-text-color-light, #777);
+    opacity: 0.55;
+  }
+
+  @media (max-width: 991.98px) {
+    &::before {
+      display: none;
+    }
+
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
   .nav-link.lang-option {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     font-size: 0.85rem;
     letter-spacing: 0.04em;
   }
 
+  /* The active language reads as bold and full strength, the others muted.
+     Colour is deliberately not used: the theme already paints the active page
+     link in the accent colour, and a second accent here would compete with it.
+     (A `color` here would lose to .navbar .navbar-nav .nav-item .nav-link
+     anyway, which is more specific.) */
   .lang-current {
     font-weight: bold;
-    color: var(--global-theme-color);
     cursor: default;
+  }
+
+  a.lang-option {
+    opacity: 0.6;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 
   .lang-sep {
