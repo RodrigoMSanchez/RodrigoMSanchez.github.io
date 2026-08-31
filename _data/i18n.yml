@@ -1,7 +1,8 @@
 # -----------------------------------------------------------------------------
-# UI strings for the bilingual site (English / Swiss Standard German).
+# UI strings for the trilingual site (English / Swiss Standard German / Spanish).
 # Look up with: {% assign t = site.data.i18n[page.lang] %}
-# Page bodies live in _pages/ (English) and _pages/de/ (German); only chrome,
+# Page bodies live in _pages/ (English), _pages/de/ (German) and _pages/es/
+# (Spanish); only chrome,
 # labels and dates are translated here.
 # -----------------------------------------------------------------------------
 
