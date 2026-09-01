@@ -24,7 +24,8 @@ nav_order: 3
       Informe para <em>UNHCR</em>, 2024
     </div>
     <div class="links">
-      <a href="https://immigrationlab.org/content/uploads/2024/01/IPL_HomeForGood_UNHCR_2023.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+      <a href="https://immigrationlab.org/content/uploads/2024/01/IPL_HomeForGood_UNHCR_2023.pdf" class="btn btn-sm z-depth-0" role="button">Informe UNHCR</a>
+      <a href="https://immigrationlab.org/content/uploads/2024/01/IPL-Home-For-Good-ResearchBrief-2023.pdf" class="btn btn-sm z-depth-0" role="button">Resumen IPL</a>
     </div>
   </div>
 </div>
