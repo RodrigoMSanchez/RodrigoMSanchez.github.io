@@ -42,6 +42,7 @@ en:
     awarded: Awarded
     link: Link to paper
     preprint: Preprint
+    replication: Replication
     references: References
   # activity map on the "Beyond Research" page
   activities: activities
@@ -91,6 +92,7 @@ de:
     awarded: Ausgezeichnet
     link: Zum Artikel
     preprint: Preprint
+    replication: Replikation
     references: Literatur
   activities: Aktivitäten
   heatmap_error: "Streckendaten konnten nicht geladen werden"
@@ -138,6 +140,7 @@ es:
     awarded: Premiado
     link: Ver artículo
     preprint: Preprint
+    replication: Replicación
     references: Referencias
   activities: actividades
   heatmap_error: "No se pudieron cargar los datos de las rutas"
