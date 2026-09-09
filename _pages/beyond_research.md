@@ -4,8 +4,7 @@ permalink: /beyond/
 ref: beyond # pairs this page with its German and Spanish counterparts
 title: Beyond Research
 description: Cycling, the outdoors, and the occasional data question.
-nav: true
-nav_order: 5
+nav: false # reached through the "Other" dropdown, not the navbar row
 images:
   slider: true
   spotlight: true

@@ -3,10 +3,8 @@ layout: page
 permalink: /es/aficiones/
 ref: beyond
 title: Fuera de la investigación
-nav_title: Aficiones # the navbar row only fits a short label here
 description: Ciclismo, aire libre y alguna que otra pregunta a los datos.
-nav: true
-nav_order: 5
+nav: false # se llega por el menú "Otros", no por la barra de navegación
 images:
   slider: true
   spotlight: true

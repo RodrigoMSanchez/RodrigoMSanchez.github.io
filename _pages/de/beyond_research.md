@@ -4,8 +4,7 @@ permalink: /de/neben-der-forschung/
 ref: beyond
 title: Neben der Forschung
 description: Velofahren, draussen sein und ab und zu eine Frage an die Daten.
-nav: true
-nav_order: 5
+nav: false # über das Menü "Weiteres" erreichbar, nicht über die Navigationsleiste
 images:
   slider: true
   spotlight: true
