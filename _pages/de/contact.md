@@ -23,4 +23,5 @@ Ich freue mich über Anfragen zu meiner Forschung, zu möglichen Kooperationen u
 <a href="https://scholar.google.com/citations?user=WKpNickAAAAJ" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i> Google Scholar</a> &middot;
 <a href="https://orcid.org/0009-0009-4496-3734" target="_blank" rel="noopener noreferrer"><i class="ai ai-orcid"></i> ORCID</a> &middot;
 <a href="https://www.linkedin.com/in/rodrigosanchez8" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a> &middot;
+<a href="https://bsky.app/profile/rsanchezsienra.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fab fa-bluesky"></i> Bluesky</a> &middot;
 <a href="https://www.strava.com/athletes/51373334" target="_blank" rel="noopener noreferrer"><i class="fab fa-strava"></i> Strava</a>
