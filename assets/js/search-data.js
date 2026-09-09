@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-investigación",
-          title: "Investigación",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/es/investigacion/";
-          },
-        },{id: "nav-forschung",
+  },{id: "nav-forschung",
           title: "Forschung",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/de/forschung/";
+          },
+        },{id: "nav-investigación",
+          title: "Investigación",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/es/investigacion/";
           },
         },{id: "nav-research",
           title: "Research",
@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "nav-informes-de-política",
-          title: "Informes de política",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/es/informes/";
-          },
         },{id: "nav-politikberichte",
           title: "Politikberichte",
           description: "",
@@ -44,19 +37,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/de/politikberichte/";
           },
+        },{id: "nav-informes-de-política",
+          title: "Informes de política",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/es/informes/";
+          },
         },{id: "nav-policy-reports",
           title: "Policy Reports",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/policy-reports/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/es/cv/";
           },
         },{id: "nav-lebenslauf",
           title: "Lebenslauf",
@@ -70,28 +63,63 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
+            window.location.href = "/es/cv/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "",
+          section: "Navigation",
+          handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-fuera-de-la-investigación",
-          title: "Fuera de la investigación",
-          description: "Ciclismo, aire libre y alguna que otra pregunta a los datos.",
+        },{id: "dropdown-daten",
+              title: "Daten",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/de/daten/";
+              },
+            },{id: "dropdown-neben-der-forschung",
+              title: "Neben der Forschung",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/de/neben-der-forschung/";
+              },
+            },{id: "dropdown-datos",
+              title: "Datos",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/es/datos/";
+              },
+            },{id: "dropdown-fuera-de-la-investigación",
+              title: "Fuera de la investigación",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/es/aficiones/";
+              },
+            },{id: "dropdown-data",
+              title: "Data",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/data/";
+              },
+            },{id: "dropdown-beyond-research",
+              title: "Beyond Research",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/beyond/";
+              },
+            },{id: "nav-kontakt",
+          title: "Kontakt",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/es/aficiones/";
-          },
-        },{id: "nav-neben-der-forschung",
-          title: "Neben der Forschung",
-          description: "Velofahren, draussen sein und ab und zu eine Frage an die Daten.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/de/neben-der-forschung/";
-          },
-        },{id: "nav-beyond-research",
-          title: "Beyond Research",
-          description: "Cycling, the outdoors, and the occasional data question.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/beyond/";
+            window.location.href = "/de/kontakt/";
           },
         },{id: "nav-contacto",
           title: "Contacto",
@@ -99,13 +127,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/es/contacto/";
-          },
-        },{id: "nav-kontakt",
-          title: "Kontakt",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/de/kontakt/";
           },
         },{id: "nav-contact",
           title: "Contact",
