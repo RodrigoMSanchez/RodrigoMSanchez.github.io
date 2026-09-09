@@ -30,7 +30,7 @@ latest_posts:
   limit: 3
 ---
 
-Willkommen! Ich bin Doktorand an der Swiss Graduate School of Public Administration ([IDHEAP](https://www.unil.ch/idheap/de/home.html)), Universität Lausanne.
+Willkommen! Ich bin Doktorand am [IDHEAP](https://www.unil.ch/idheap/de/home.html) der Universität Lausanne.
 
 Ich arbeite mit randomisierten kontrollierten Studien, Umfrageexperimenten und weiteren Methoden der **kausalen Inferenz** und untersuche damit **Migration** und Integration, **Ungleichheit** sowie **Bildungspolitik**. Mich interessiert, wie politische Massnahmen die Integration von Migrantinnen, Migranten und Geflüchteten prägen, und wie die Ausgestaltung von Schulsystemen Ungleichheit und die öffentliche Haltung dazu beeinflusst.
 
