@@ -71,6 +71,13 @@
       {% if include.zoomable %}
         data-zoomable
       {% endif %}
+      {% comment %}
+        medium-zoom reads data-zoom-src off the <img>; it never looks at the
+        <source> srcset, so a responsive thumbnail needs this to zoom sharply.
+      {% endcomment %}
+      {% if include.data_zoom_src %}
+        data-zoom-src="{{ include.data_zoom_src | relative_url }}"
+      {% endif %}
       {% if include.loading %}
         loading="{{ include.loading }}"
       {% elsif site.lazy_loading_images %}
