@@ -26,6 +26,21 @@ Salgo en bicicleta, en la carretera y también bajo techo en Zwift, y trato de a
 </swiper-container>
 </div>
 
+<div class="hm-wrap">
+  <div class="hm-head">
+    <span class="hm-kicker">Por dónde ruedo</span>
+    <span class="hm-stats" id="heatmap-stats"></span>
+  </div>
+  {%- assign t = site.data.i18n[page.lang] -%}
+  <div
+    id="activity-heatmap"
+    data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"
+    data-label-activities="{{ t.activities }}"
+    data-label-error="{{ t.heatmap_error }}"
+  ></div>
+  <p class="hm-note">Salidas en bicicleta, carreras, caminatas y paseos que registré en Suiza, dibujados a partir de los trazos GPS. Las zonas alrededor de mis puntos de salida habituales quedan fuera.</p>
+</div>
+
 #### Cuando la afición se cruza con el trabajo
 
 <div markdown="1">
@@ -46,3 +61,5 @@ Registrar cada salida durante años deja muchos datos, así que puse a prueba la
 <span class="ms-2 text-muted"><em>Medio en serio. Las regresiones son reales.</em></span>
 </div>
 
+<script src="{{ '/assets/leaflet/leaflet.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/heatmap.js' | relative_url }}"></script>
