@@ -251,9 +251,7 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
-  # heatmap-tracks.json holds encoded polylines whose backslash escapes break
-  # the json-minify pre-scanner; serve it as-is (it is already compact)
-  exclude: ["robots.txt", "assets/js/search/*.js", "assets/json/heatmap-tracks.json"]
+  exclude: ["robots.txt", "assets/js/search/*.js"]
 
 # -----------------------------------------------------------------------------
 # Terser

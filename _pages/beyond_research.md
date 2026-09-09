@@ -26,21 +26,6 @@ I ride bikes, both outdoors and indoors on Zwift, and I try to put in 8 to 12 ho
 </swiper-container>
 </div>
 
-<div class="hm-wrap">
-  <div class="hm-head">
-    <span class="hm-kicker">Where I ride</span>
-    <span class="hm-stats" id="heatmap-stats"></span>
-  </div>
-  {%- assign t = site.data.i18n[page.lang] -%}
-  <div
-    id="activity-heatmap"
-    data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"
-    data-label-activities="{{ t.activities }}"
-    data-label-error="{{ t.heatmap_error }}"
-  ></div>
-  <p class="hm-note">Every outdoor ride, run, hike and walk I have recorded across Switzerland, drawn from the raw GPS traces.</p>
-</div>
-
 #### When the hobby meets the day job
 
 <div markdown="1">
@@ -61,5 +46,3 @@ Recording every ride for years leaves me with a lot of data, so I tested the obv
 <span class="ms-2 text-muted"><em>Half-serious. The regressions are real.</em></span>
 </div>
 
-<script src="{{ '/assets/leaflet/leaflet.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/heatmap.js' | relative_url }}"></script>

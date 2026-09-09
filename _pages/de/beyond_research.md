@@ -26,21 +26,6 @@ Ich fahre Velo, draussen und drinnen auf Zwift, und versuche auf 8 bis 12 Stunde
 </swiper-container>
 </div>
 
-<div class="hm-wrap">
-  <div class="hm-head">
-    <span class="hm-kicker">Wo ich fahre</span>
-    <span class="hm-stats" id="heatmap-stats"></span>
-  </div>
-  {%- assign t = site.data.i18n[page.lang] -%}
-  <div
-    id="activity-heatmap"
-    data-src="{{ '/assets/json/heatmap-tracks.json' | relative_url }}"
-    data-label-activities="{{ t.activities }}"
-    data-label-error="{{ t.heatmap_error }}"
-  ></div>
-  <p class="hm-note">Alle Ausfahrten, Läufe, Wanderungen und Spaziergänge, die ich in der Schweiz aufgezeichnet habe, gezeichnet aus den rohen GPS-Spuren.</p>
-</div>
-
 #### Wenn das Hobby auf den Beruf trifft
 
 <div markdown="1">
@@ -61,5 +46,3 @@ Wer jahrelang jede Ausfahrt aufzeichnet, sammelt eine Menge Daten, also habe ich
 <span class="ms-2 text-muted"><em>Halb im Ernst. Die Regressionen sind echt.</em></span>
 </div>
 
-<script src="{{ '/assets/leaflet/leaflet.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/heatmap.js' | relative_url }}"></script>
