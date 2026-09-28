@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-forschung",
-          title: "Forschung",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/de/forschung/";
-          },
-        },{id: "nav-investigación",
+  },{id: "nav-investigación",
           title: "Investigación",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/es/investigacion/";
+          },
+        },{id: "nav-forschung",
+          title: "Forschung",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/de/forschung/";
           },
         },{id: "nav-research",
           title: "Research",
@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "nav-politikberichte",
-          title: "Politikberichte",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/de/politikberichte/";
-          },
         },{id: "nav-informes-de-política",
           title: "Informes de política",
           description: "",
@@ -44,12 +37,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/es/informes/";
           },
+        },{id: "nav-politikberichte",
+          title: "Politikberichte",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/de/politikberichte/";
+          },
         },{id: "nav-policy-reports",
           title: "Policy Reports",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/policy-reports/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/es/cv/";
           },
         },{id: "nav-lebenslauf",
           title: "Lebenslauf",
@@ -63,30 +70,9 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/es/cv/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "",
-          section: "Navigation",
-          handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "dropdown-daten",
-              title: "Daten",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/de/daten/";
-              },
-            },{id: "dropdown-neben-der-forschung",
-              title: "Neben der Forschung",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/de/neben-der-forschung/";
-              },
-            },{id: "dropdown-datos",
+        },{id: "dropdown-datos",
               title: "Datos",
               description: "",
               section: "Dropdown",
@@ -99,6 +85,20 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/es/aficiones/";
+              },
+            },{id: "dropdown-daten",
+              title: "Daten",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/de/daten/";
+              },
+            },{id: "dropdown-neben-der-forschung",
+              title: "Neben der Forschung",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/de/neben-der-forschung/";
               },
             },{id: "dropdown-data",
               title: "Data",
@@ -114,19 +114,19 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/beyond/";
               },
-            },{id: "nav-kontakt",
-          title: "Kontakt",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/de/kontakt/";
-          },
-        },{id: "nav-contacto",
+            },{id: "nav-contacto",
           title: "Contacto",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/es/contacto/";
+          },
+        },{id: "nav-kontakt",
+          title: "Kontakt",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/de/kontakt/";
           },
         },{id: "nav-contact",
           title: "Contact",
