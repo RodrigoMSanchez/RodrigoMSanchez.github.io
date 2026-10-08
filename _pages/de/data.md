@@ -14,12 +14,12 @@ nav: false # über das Menü "Weiteres" erreichbar, nicht über die Navigationsl
 <li>
 <div class="row">
   <div id="tracking2026" class="col-sm-10">
-    <div class="title">Who Likes Tracking? Evidence on Institutional Feedback in Education Policy</div>
+    <div class="title">Who likes tracking? Evidence on institutional feedback in education policy</div>
     <div class="author">
       mit Flavia Fossati
     </div>
     <div class="periodical">
-      <em>Journal of European Social Policy</em>, im Erscheinen
+      <em>Journal of European Social Policy</em>, 2026
     </div>
     <div class="links">
       <a href="https://doi.org/10.5281/zenodo.22234621" class="btn btn-sm z-depth-0" role="button">Zenodo</a>
